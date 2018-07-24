@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation = "http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+  <bean id="empsetter" class="com.raghu.SpringBeanClasses.Employee">
+  <property name="id" value="1" />
+  <property name="firstname" value="raghu" />
+  <property name="lastName" value="ram" />
+  <property name="mobile" value="2818548607" />
+  <property name="email" value="raghuram@gmail.com" />
+  </bean>
+  <bean id="empmethod" class="com.raghu.SpringBeanClasses.teacher" init-method="init" destroy-method="close">
+  <property name="id" value="2" />
+  <property name="firstname" value="kranthi" />
+  <property name="lastName" value="Kumar" />
+  <property name="mobile" value="1234567890" />
+  <property name="email" value="kranthi@gmail.com" />
+  </bean>
+  </beans>
+  
