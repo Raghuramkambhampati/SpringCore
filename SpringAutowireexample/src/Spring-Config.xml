@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation = "http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+  <bean id="emp1" class="com.raghu.SpringCore.beanclasses.Employee" autowire="byName">
+  <property name="id" value="1" />
+  <property name="firstname" value="raghu" />
+  <property name="lastName" value="ram" />
+  <property name="mobile" value="2818548607" />
+  <property name="email" value="raghuram@gmail.com" />
+  </bean>
+  <bean id="emp2" class="com.raghu.SpringCore.beanclasses.Employee" autowire="byType">
+  <property name="id" value="2" />
+  <property name="firstname" value="mike" />
+  <property name="lastName" value="jackson" />
+  <property name="mobile" value="2818548607" />
+  <property name="email" value="mike@gmail.com" />
+  </bean>
+  <bean id="dep" class="com.raghu.SpringCore.beanclasses.Department">
+  <property name="name" value="2" />
+  <property name="location" value="kranthi" />
+  <property name="hod" value="Kumar" />
+  </bean>
+  </beans>
+  
